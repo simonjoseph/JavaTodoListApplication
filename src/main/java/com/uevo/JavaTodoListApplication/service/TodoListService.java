@@ -22,7 +22,7 @@ public class TodoListService {
         return todoListRepository.findById(id).orElse(null);
     }
 
-    public TodoList createTodoList(TodoList todoList) {
+    public TodoList save(TodoList todoList) {
         return todoListRepository.save(todoList);
     }
 
